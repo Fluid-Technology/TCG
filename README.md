@@ -1,13 +1,17 @@
 # Pokémon TCG Game
 
-A simple command-line implementation of the Pokémon Trading Card Game with rock-type Pokémon.
+A command-line implementation of the Pokémon Trading Card Game featuring rock-type Pokémon. This project simulates the core mechanics of the Pokémon TCG in a text-based interface with ASCII art visualization.
 
 ## Features
 
-- Play against a computer opponent
-- Rock-type Pokémon deck
+- Play against a computer opponent with strategic AI
+- Deck of rock-type Pokémon (Geodude, Onix, Tyranitar, etc.)
+- Energy and Trainer cards
 - ASCII art display for cards and game board
-- Simple turn-based gameplay
+- Prize card system
+- Bench Pokémon
+- Energy attachment mechanics
+- Mulligan handling
 
 ## How to Play
 
@@ -38,13 +42,29 @@ A simple command-line implementation of the Pokémon Trading Card Game with rock
 
 ## Game Structure
 
-- `pokemon_tcg.py`: Main game file
-- `pokemon_cards.py`: Card definitions
-- `player.py`: Player class implementation
-- `ascii_art.py`: ASCII art utilities
+- **pokemon_tcg.py**: Main game file containing game loop and turn logic
+- **player.py**: Player class implementation with deck, hand, and gameplay methods
+- **pokemon_cards.py**: Card definitions (Pokémon, Energy, and Trainer cards)
+- **ascii_art.py**: ASCII art utilities for visualizing the game
 
 ## Requirements
 
 - Python 3.6 or higher
+
+## Project Overview
+
+The game implements a simplified version of the Pokémon Trading Card Game with a focus on rock-type Pokémon. It follows these core mechanics:
+
+- **Card Types**: Pokémon, Energy, and Trainer cards
+- **Evolution**: Basic Pokémon can evolve into more powerful forms
+- **Energy System**: Pokémon need energy cards to use attacks
+- **Prize Cards**: Take prize cards when you knock out opponent's Pokémon
+- **Active and Bench**: One active Pokémon in battle, up to 5 on bench
+
+The implementation uses ASCII art to visualize the game state, making it playable in any terminal.
+
+## License
+
+This is a fan project and is not affiliated with or endorsed by Nintendo, The Pokémon Company, or Game Freak.
 
 Enjoy the game! 
